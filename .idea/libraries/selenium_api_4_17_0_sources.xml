@@ -1,0 +1,44 @@
+<component name="libraryTable">
+  <library name="selenium-api-4.17.0-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/library/selenium-api-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-chrome-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-chromium-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v85-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v119-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v120-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v121-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-edge-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-firefox-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-http-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-ie-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-java-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-json-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-manager-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-os-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-remote-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-safari-driver-4.17.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-support-4.17.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/library/selenium-api-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-chrome-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-chromium-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v85-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v119-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v120-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-devtools-v121-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-edge-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-firefox-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-http-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-ie-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-json-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-manager-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-os-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-remote-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-safari-driver-4.17.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/selenium-support-4.17.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
