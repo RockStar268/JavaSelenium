@@ -33,9 +33,20 @@ public class Action {
         }
     }
     public List<WebElement> getElements(String xpath){
-//        WebElement parentElement = waitForElement(xpath);
-        return driver.findElements(By.xpath(xpath));
+      WebElement parentElement = waitForElement(xpath);
+        return parentElement.findElements(By.xpath(xpath));
     }
+
+    public String getElementText(String xpath){
+        WebElement element = waitForElement(xpath);
+        return element.getText();
+    }
+
+    public boolean elementIsDisplayed(String xpath){
+        WebElement element = waitForElement(xpath);
+        return element.isDisplayed();
+    }
+
     private WebElement waitForElement(String xpath) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
