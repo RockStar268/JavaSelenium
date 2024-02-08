@@ -33,7 +33,7 @@ public class SearchDestination extends Action {
         this.pet = pet;
     }
 
-    public void submit_search_data() throws InterruptedException {
+    public void submitSearchData() throws InterruptedException {
 
         String addAdults = "//button[@data-testid=\"stepper-adults-increase-button\"]";
         String totalAmountAdults = "//span[@data-testid=\"stepper-adults-a11y-value-label\"]";
@@ -136,4 +136,32 @@ public class SearchDestination extends Action {
         assert elementIsDisplayed(searchResultPage);
     }
 
+    public void selectStay(){
+        String allStays = "//div[@itemprop=\"itemListElement\"]";
+
+        List<WebElement> searchResultStay = getElements(allStays);
+
+        if (!searchResultStay.isEmpty()) {
+            // Click on the first found element
+            searchResultStay.get(0).click();
+            System.out.println("First available stay is selected");
+        }
+        else {
+            System.out.println("No search result unfortunately..");
+        }
+    }
+
+    public void selectPaymentType(String paymentType){
+        String payInFull = "//input[@id=\"payment-plan-selection-row-0\"]";
+        String klarna = "//input[@id=\"payment-plan-selection-row-1\"]";
+
+        switch(paymentType.toLowerCase()){
+            case "pay in full":
+                clickElement(payInFull);
+            break;
+            case "klarna":
+                clickElement(klarna);
+            break;
+        }
+    }
 }
