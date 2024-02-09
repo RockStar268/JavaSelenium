@@ -2,8 +2,8 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import static data.GlobalVariables.BASEURL;
 
@@ -11,7 +11,7 @@ public class TestSetup {
     protected WebDriver driver;
     protected Action action;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();
         action = new Action(driver);
@@ -19,7 +19,7 @@ public class TestSetup {
         driver.manage().window().maximize();
 
     }
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();

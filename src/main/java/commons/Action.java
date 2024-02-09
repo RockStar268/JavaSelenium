@@ -3,6 +3,7 @@ package commons;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -43,8 +44,20 @@ public class Action {
     }
 
     public boolean elementIsDisplayed(String xpath){
+        try{
+            WebElement element = waitForElement(xpath);
+            element.findElement(By.xpath(xpath)).isDisplayed();
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
+    }
+
+    public void moveToAndClickElement(String xpath){
         WebElement element = waitForElement(xpath);
-        return element.isDisplayed();
+        Actions a = new Actions(driver);
+        a.moveToElement(element).click().build().perform();
     }
 
     private WebElement waitForElement(String xpath) {
