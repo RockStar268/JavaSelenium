@@ -1,7 +1,8 @@
 package Tests;
 
-import commons.TestSetup;
+import configs.TestSetup;
 import org.openqa.selenium.WebElement;
+
 import org.testng.annotations.Test;
 import pages.SearchDestination;
 import pages.TranslationToggle;

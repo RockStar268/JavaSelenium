@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--    if you want to run test suites parallel, add "thread-count= "3"  parallel = "methods" / "class" in suite tag-->
+<suite name="TestSuite">
+    <!-- Define the test classes to be included in the suite -->
+    <listeners>
+        <listener class-name="configs.Listeners"/>
+    </listeners>
+<!--    add "thread-count= "3"  parallel = "methods" " if you want to run 3 tests parallel within a testing class in test tag -->
+    <test name="TestSuite">
+        <classes>
+            <!-- Add your test classes here -->
+            <class name="Tests.TestFinalizeBooking"/>
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+    <!-- You can define more tests or suites here if needed -->
+</suite>
