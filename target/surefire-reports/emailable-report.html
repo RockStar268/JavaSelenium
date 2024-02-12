@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,325</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.TestFinalizeBooking</td><td><a href="#m0">selectStay</a></td><td rowspan="1">1707679778534</td><td rowspan="1">11561</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">tests.TestFinalizeBooking</td><td><a href="#m1">phoneNumberFieldMandatory</a></td><td rowspan="1">1707679790103</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m2">submitBookingWithoutFillingInMandatoryFields</a></td><td rowspan="1">1707679790103</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.TestFinalizeBooking</td><td><a href="#m3">submitSearchData</a></td><td rowspan="1">1707679774236</td><td rowspan="1">4297</td></tr><tr class="passedeven"><td><a href="#m4">turnOffTranslation</a></td><td rowspan="1">1707679762293</td><td rowspan="1">11940</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">tests.TestFinalizeBooking#selectStay</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>Bangkok</td><td>Thailand</td><td>02/24/2024</td><td>03/13/2024</td><td>2</td><td>5</td><td>2</td><td>0</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[@data-testid=&quot;homes-pdp-cta-btn&quot;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.3.1&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.160, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/9n/kx57t9ps00g...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56317}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56317/devtoo..., se:cdpVersion: 121.0.6167.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6200ace43053b8b56fc835c7ae4477e6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commons.Action.waitForElement(Action.java:65)
+	at commons.Action.getElements(Action.java:37)
+	at pages.SearchDestination.reserveStay(SearchDestination.java:157)
+	at tests.TestFinalizeBooking.selectStay(TestFinalizeBooking.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.TestFinalizeBooking#phoneNumberFieldMandatory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.TestFinalizeBooking.phoneNumberFieldMandatory() on instance tests.TestFinalizeBooking@50a7bc6e depends on not successfully finished methods 
+[tests.TestFinalizeBooking.submitBookingWithoutFillingInMandatoryFields() on instance tests.TestFinalizeBooking@50a7bc6e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.TestFinalizeBooking#submitBookingWithoutFillingInMandatoryFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.TestFinalizeBooking.submitBookingWithoutFillingInMandatoryFields() on instance tests.TestFinalizeBooking@50a7bc6e depends on not successfully finished methods 
+[tests.TestFinalizeBooking.selectStay() on instance tests.TestFinalizeBooking@50a7bc6e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.TestFinalizeBooking#submitSearchData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>Bangkok</td><td>Thailand</td><td>02/24/2024</td><td>03/13/2024</td><td>2</td><td>5</td><td>2</td><td>0</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.TestFinalizeBooking#turnOffTranslation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
