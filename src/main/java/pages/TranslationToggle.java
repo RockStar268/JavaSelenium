@@ -4,6 +4,7 @@ import commons.Action;
 import org.openqa.selenium.WebDriver;
 
 public class TranslationToggle extends Action {
+    // I have put  languageRegionButton as a public variable in case turnOnTranslation method need to be created.
     public String languageRegionButton = "//div[@class=\"lx138ae atm_h_1h6ojuz atm_9s_1txwivl atm_e2_1osqo2v atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr\"]/../../button";
 
     public TranslationToggle(WebDriver driver) {

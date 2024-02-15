@@ -9,7 +9,7 @@
     <test name="TestSuite">
         <classes>
             <!-- Add your test classes here -->
-            <class name="Tests.TestFinalizeBooking"/>
+            <class name="tests.TestFinalizeBooking"/>
             <!-- Add more test classes as needed -->
         </classes>
     </test>

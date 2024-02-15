@@ -151,6 +151,12 @@ public class SearchDestination extends Action {
         }
     }
 
+    public void reserveStay(){
+        String reserveButton = "//button[@data-testid=\"homes-pdp-cta-btn\"]";
+
+        List<WebElement> button = getElements(reserveButton); // this method is not stable.. sometimes 2 buttons appear with the same name and class and sometimes not.
+        clickElement(String.valueOf(button.get(1)));          // due to bad practices on the airbnb site.
+    }
     public void selectPaymentType(String paymentType){
         String payInFull = "//input[@id=\"payment-plan-selection-row-0\"]";
         String klarna = "//input[@id=\"payment-plan-selection-row-1\"]";
