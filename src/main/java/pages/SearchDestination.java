@@ -13,7 +13,7 @@ import static pageObjects.GlobalElements.*;
 public class SearchDestination extends Action {
     public String city;
     public String country;
-//    Dates are in mm/dd/yyyy format
+ //    Dates are in mm/dd/yyyy format
     public String dateStart;
     public String dateEnd;
     public int adults;
